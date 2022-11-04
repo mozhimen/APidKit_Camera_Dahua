@@ -1,0 +1,2 @@
+# CameraKit_Dahua
+Android接入大华摄像头的封装开发库
