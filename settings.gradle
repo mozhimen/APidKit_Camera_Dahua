@@ -1,16 +1,20 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-    }
-}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://www.jitpack.io' }
         mavenCentral()
+        google()
     }
 }
 rootProject.name = "CameraKit_Dahua"
 include ':app'
+include ':camerak_dahua'
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("C:\\Users\\mozhimen\\Documents\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
+include ':SwiftKit:componentk'
+include ':SwiftKit:uicorek'
+include ':SwiftKit:underlayk'
+include ':camerak_dahua_base'

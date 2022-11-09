@@ -12,10 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CameraKit_Dahua"
-        tools:targetApi="31">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="s">
+        <activity
+            android:name=".PreviewActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".FunctionListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".IPLoginActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
