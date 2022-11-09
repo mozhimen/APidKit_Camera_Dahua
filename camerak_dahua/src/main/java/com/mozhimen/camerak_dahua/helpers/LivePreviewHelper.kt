@@ -63,6 +63,8 @@ class LivePreviewHelper {
         return _playPort
     }
 
+    fun isReadyPlay(): Boolean =
+        _realHandle == 0L
 
     //开始预览视频
     fun startPlay(loginHandle: Long, channel: Int, streamType: Int, surfaceView: SurfaceView) {

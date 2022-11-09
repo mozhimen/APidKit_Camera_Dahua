@@ -31,7 +31,7 @@ android {
 
 dependencies {
     implementation project(':SwiftKit:basick')
-    api project(path: ':camerak_dahua_base')
+    api project(project.path.replace(project.name, '') + ':camerak_dahua_base')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
