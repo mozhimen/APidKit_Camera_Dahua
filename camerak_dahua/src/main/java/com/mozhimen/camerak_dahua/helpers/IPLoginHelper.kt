@@ -24,6 +24,7 @@ class IPLoginHelper {
     private var _deviceName: String = ""
     private var _loginType = EM_LOGIN_SPAC_CAP_TYPE.EM_LOGIN_SPEC_CAP_MOBILE
     private var _errorCode = 0
+    private var _isLogin = false
 
     fun setLoginType(type: EIPLoginType) {
         if (EIPLoginType.IP == type) {
@@ -51,6 +52,10 @@ class IPLoginHelper {
 
     fun getErrorMsg(): String {
         return CIPLoginErrorCode.getErrorCode(_errorCode)
+    }
+
+    fun isLogin(): Boolean {
+        return _isLogin
     }
 
     //获取通道数量
@@ -109,7 +114,7 @@ class IPLoginHelper {
 //        {
 //            ToolKits.writeLog("SetLocalMode-EM_LOCAL_PLAYBACK_FLAG_MODE failed,nPlaybackValue：" + nPlaybackValue + "LastError:" + INetSDK.GetLastError());
 //        }
-        return true
+        return true.also { _isLogin = it }
     }
 
     fun logout(): Boolean {
@@ -120,6 +125,6 @@ class IPLoginHelper {
         if (retLogout) {
             _loginHandle = 0
         }
-        return retLogout
+        return retLogout.also { _isLogin = false }
     }
 }
