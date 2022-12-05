@@ -7,10 +7,10 @@ import com.company.NetSDK.CB_fRealDataCallBackEx
 import com.company.NetSDK.INetSDK
 import com.company.NetSDK.SDK_RealPlayType
 import com.company.PlaySDK.IPlaySDK
-import com.mozhimen.basick.extsk.showToastOnMain
 import com.mozhimen.basick.utilk.UtilKDate
-import com.mozhimen.basick.utilk.UtilKGlobal
 import com.mozhimen.basick.utilk.UtilKRes
+import com.mozhimen.basick.utilk.context.UtilKApplication
+import com.mozhimen.basick.utilk.exts.showToastOnMain
 import com.mozhimen.camerak_dahua.R
 
 
@@ -29,7 +29,7 @@ class LivePreviewHelper {
         private const val RAW_AUDIO_VIDEO_MIX_DATA = 0 //原始音视频混合数据;  //Raw audio and video mixing data.
     }
 
-    private val _context: Context = UtilKGlobal.instance.getApp()!!
+    private val _context: Context = UtilKApplication.instance.get()
 
     private var _realHandle: Long = 0
     private var _playPort: Int = 0
@@ -172,7 +172,7 @@ class LivePreviewHelper {
      */
     @Synchronized
     private fun getInnerAppFileName(suffix: String): String {
-        return "${_context.getExternalFilesDir(null)!!.absolutePath}/camerak_dahua_live_${UtilKDate.getNowTime()}.${suffix}"
+        return "${_context.getExternalFilesDir(null)!!.absolutePath}/camerak_dahua_live_${UtilKDate.getNowLong()}.${suffix}"
     }
 
     /**

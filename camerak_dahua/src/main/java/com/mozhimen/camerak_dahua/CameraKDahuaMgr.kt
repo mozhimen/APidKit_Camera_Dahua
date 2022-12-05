@@ -3,7 +3,7 @@ package com.mozhimen.camerak_dahua
 import com.company.netsdk.common.NetSDKLib
 import com.mozhimen.basick.utilk.UtilKDate
 import com.mozhimen.basick.utilk.UtilKFile
-import com.mozhimen.basick.utilk.UtilKGlobal
+import com.mozhimen.basick.utilk.context.UtilKApplication
 import com.mozhimen.camerak_dahua.helpers.IPLoginHelper
 import com.mozhimen.camerak_dahua.helpers.LivePreviewHelper
 
@@ -25,10 +25,10 @@ class CameraKDahuaMgr {
         val holder = CameraKDahuaMgr()
     }
 
-    private val _context by lazy { UtilKGlobal.instance.getApp()!! }
+    private val _context by lazy { UtilKApplication.instance.get() }
     private val _ipLoginHelper by lazy { IPLoginHelper() }
     private val _livePreviewHelper by lazy { LivePreviewHelper() }
-    private val _cameraLogPath by lazy { _context.cacheDir.absolutePath + "/camerak_dahua/${UtilKDate.getNowTime()}.log" }
+    private val _cameraLogPath by lazy { _context.cacheDir.absolutePath + "/camerak_dahua/${UtilKDate.getNowLong()}.log" }
 
     fun init() {
         NetSDKLib.getInstance().init()
