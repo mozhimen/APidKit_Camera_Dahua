@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NetSDK 演示程序</string>
-
     <!--Title-->
     <string name="title_function_list">功能列表</string>
 
