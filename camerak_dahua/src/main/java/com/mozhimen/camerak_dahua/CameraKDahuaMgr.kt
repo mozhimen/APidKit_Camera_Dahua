@@ -2,8 +2,8 @@ package com.mozhimen.camerak_dahua
 
 import com.company.netsdk.common.NetSDKLib
 import com.mozhimen.basick.utilk.UtilKDate
-import com.mozhimen.basick.utilk.UtilKFile
 import com.mozhimen.basick.utilk.context.UtilKApplication
+import com.mozhimen.basick.utilk.file.UtilKFile
 import com.mozhimen.camerak_dahua.helpers.IPLoginHelper
 import com.mozhimen.camerak_dahua.helpers.LivePreviewHelper
 
