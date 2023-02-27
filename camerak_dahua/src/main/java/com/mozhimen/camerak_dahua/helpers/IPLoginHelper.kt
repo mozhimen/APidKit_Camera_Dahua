@@ -2,7 +2,7 @@ package com.mozhimen.camerak_dahua.helpers
 
 import android.util.Log
 import com.company.NetSDK.*
-import com.mozhimen.basick.utilk.UtilKRes
+import com.mozhimen.basick.utilk.res.UtilKRes
 import com.mozhimen.camerak_dahua.R
 import com.mozhimen.camerak_dahua.cons.CIPLoginErrorCode
 import com.mozhimen.camerak_dahua.cons.EIPLoginType

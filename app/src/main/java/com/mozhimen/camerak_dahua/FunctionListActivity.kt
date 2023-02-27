@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.company.netsdk.R
 import com.mozhimen.basick.basek.BaseKActivityVB
 import com.mozhimen.basick.extsk.start
-import com.mozhimen.basick.utilk.UtilKRes
+import com.mozhimen.basick.utilk.res.UtilKRes
 import com.mozhimen.camerak_dahua.databinding.ActivityFunctionListBinding
 import com.mozhimen.camerak_dahua.databinding.ItemFuncBinding
 import com.mozhimen.uicorek.recyclerk.AdapterKRecycler
