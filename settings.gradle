@@ -3,6 +3,10 @@ dependencyResolutionManagement {
     repositories {
         maven { url 'https://maven.aliyun.com/repository/central' }
         maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/grails-core' }
         maven { url 'https://www.jitpack.io' }
         mavenCentral()
         google()
@@ -18,3 +22,4 @@ include ':SwiftKit:componentk'
 include ':SwiftKit:uicorek'
 include ':SwiftKit:underlayk'
 include ':camerak_dahua_base'
+include ':exam'

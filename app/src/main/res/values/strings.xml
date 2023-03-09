@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">CameraKit_Dahua</string>
 
+    <string name="activity_function_list_live_preview"> Live Preview (Single Channel) </string>
+    <string name="activity_iplogin_device_ip">IP</string>
+    <string name="activity_iplogin_device_port">Port</string>
+    <string name="activity_iplogin_username">Username</string>
+    <string name="activity_iplogin_password">Password</string>
+    <string name="common_login">Login</string>
+    <string name="common_logout">Logout</string>
+    <string name ="common_remember_info"> Remember me</string>
+
     <string name="NET_ERROR">Unknown error</string>
     <string name="NET_USER_FLASEPWD_TRYTIME">The password you typed is incorrect. </string>
     <string name="NET_LOGIN_ERROR_PASSWORD">Password is not correct</string>

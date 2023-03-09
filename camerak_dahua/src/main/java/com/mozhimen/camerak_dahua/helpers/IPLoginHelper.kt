@@ -4,6 +4,7 @@ import android.util.Log
 import com.company.NetSDK.*
 import com.mozhimen.basick.utilk.res.UtilKRes
 import com.mozhimen.camerak_dahua.R
+import com.mozhimen.camerak_dahua.bases.BaseHelper
 import com.mozhimen.camerak_dahua.cons.CIPLoginErrorCode
 import com.mozhimen.camerak_dahua.cons.EIPLoginType
 import java.util.ArrayList
@@ -16,9 +17,8 @@ import java.util.ArrayList
  * @Date 2022/11/9 14:22
  * @Version 1.0
  */
-class IPLoginHelper {
+class IPLoginHelper : BaseHelper() {
 
-    private val TAG = "IPLoginHelper>>>>>"
     private var _loginHandle: Long = 0
     private var _deviceInfo: NET_DEVICEINFO_Ex? = null
     private var _deviceName: String = ""

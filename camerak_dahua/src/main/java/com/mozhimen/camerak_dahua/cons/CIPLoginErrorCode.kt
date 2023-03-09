@@ -4,7 +4,6 @@ import com.company.NetSDK.FinalVar
 import com.mozhimen.basick.utilk.res.UtilKRes
 import com.mozhimen.camerak_dahua.R
 
-
 /**
  * @ClassName CIPLoginErrorCode
  * @Description TODO

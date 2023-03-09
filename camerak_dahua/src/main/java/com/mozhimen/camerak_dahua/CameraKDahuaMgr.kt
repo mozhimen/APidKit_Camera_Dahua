@@ -1,6 +1,7 @@
 package com.mozhimen.camerak_dahua
 
-import com.company.netsdk.common.NetSDKLib
+import com.company.netsdk.NetSDKLib
+import com.company.netsdk.commons.IDisconnectListener
 import com.mozhimen.basick.utilk.content.UtilKApplication
 import com.mozhimen.basick.utilk.device.UtilKDate
 import com.mozhimen.basick.utilk.java.io.file.UtilKFile
@@ -30,8 +31,8 @@ class CameraKDahuaMgr {
     private val _livePreviewHelper by lazy { LivePreviewHelper() }
     private val _cameraLogPath by lazy { _context.cacheDir.absolutePath + "/camerak_dahua/${UtilKDate.getNowLong()}.log" }
 
-    fun init() {
-        NetSDKLib.getInstance().init()
+    fun init(listener: IDisconnectListener) {
+        NetSDKLib.getInstance().init(listener)
         UtilKFile.createFile(_cameraLogPath)
         NetSDKLib.getInstance().openLog(_cameraLogPath)
     }

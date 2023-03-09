@@ -7,11 +7,12 @@ import com.company.NetSDK.CB_fRealDataCallBackEx
 import com.company.NetSDK.INetSDK
 import com.company.NetSDK.SDK_RealPlayType
 import com.company.PlaySDK.IPlaySDK
-import com.mozhimen.basick.utilk.device.UtilKDate
-import com.mozhimen.basick.utilk.res.UtilKRes
 import com.mozhimen.basick.utilk.content.UtilKApplication
+import com.mozhimen.basick.utilk.device.UtilKDate
 import com.mozhimen.basick.utilk.exts.showToastOnMain
+import com.mozhimen.basick.utilk.res.UtilKRes
 import com.mozhimen.camerak_dahua.R
+import com.mozhimen.camerak_dahua.bases.BaseHelper
 
 
 /**
@@ -19,10 +20,10 @@ import com.mozhimen.camerak_dahua.R
  * @Description TODO
  * @Author Mozhimen & Kolin Zhao
  * @Date 2022/11/9 14:44
+ * @Date 2023/3/9 11:06
  * @Version 1.0
  */
-class LivePreviewHelper {
-    private val TAG = "LivePreviewHelper>>>>>"
+class LivePreviewHelper : BaseHelper() {
 
     companion object {
         private const val STREAM_BUF_SIZE = 1024 * 1024 * 2
@@ -47,12 +48,43 @@ class LivePreviewHelper {
         _streamTypeMap[1] = SDK_RealPlayType.SDK_RType_Realplay_1
     }
 
-    fun setOpenSound(isOpenSound: Boolean) {
-        this._isOpenSound = isOpenSound
-    }
-
-    fun setDelayPlay(isDelayPlay: Boolean) {
-        this._isDelayPlay = isDelayPlay
+    /**
+     * 视频预览前设置
+     * @param sv SurfaceView?
+     * @return Boolean
+     */
+    fun prePlay(sv: SurfaceView?): Boolean {
+        val isOpened = IPlaySDK.PLAYOpenStream(_playPort, null, 0, STREAM_BUF_SIZE) != 0
+        if (!isOpened) {
+            Log.d(TAG, "OpenStream Failed")
+            return false
+        }
+        val isPlaying = IPlaySDK.PLAYPlay(_playPort, sv) != 0
+        if (!isPlaying) {
+            Log.d(TAG, "PLAYPlay Failed")
+            IPlaySDK.PLAYCloseStream(_playPort)
+            return false
+        }
+        if (_isOpenSound) {
+            val isSuccess = IPlaySDK.PLAYPlaySoundShare(_playPort) != 0
+            if (!isSuccess) {
+                Log.d(TAG, "SoundShare Failed")
+                IPlaySDK.PLAYStop(_playPort)
+                IPlaySDK.PLAYCloseStream(_playPort)
+                return false
+            }
+            if (-1 == _curVolume) {
+                _curVolume = IPlaySDK.PLAYGetVolume(_playPort)
+            } else {
+                IPlaySDK.PLAYSetVolume(_playPort, _curVolume)
+            }
+        }
+        if (_isDelayPlay) {
+            if (IPlaySDK.PLAYSetDelayTime(_playPort, 500 /*ms*/, 1000 /*ms*/) == 0) {
+                Log.d(TAG, "SetDelayTime Failed")
+            }
+        }
+        return true
     }
 
     fun getHandle(): Long {
@@ -61,6 +93,14 @@ class LivePreviewHelper {
 
     fun getPlayPort(): Int {
         return _playPort
+    }
+
+    fun setOpenSound(isOpenSound: Boolean) {
+        this._isOpenSound = isOpenSound
+    }
+
+    fun setDelayPlay(isDelayPlay: Boolean) {
+        this._isDelayPlay = isDelayPlay
     }
 
     fun isReadyPlay(): Boolean =
@@ -173,44 +213,5 @@ class LivePreviewHelper {
     @Synchronized
     private fun getInnerAppFileName(suffix: String): String {
         return "${_context.getExternalFilesDir(null)!!.absolutePath}/camerak_dahua_live_${UtilKDate.getNowLong()}.${suffix}"
-    }
-
-    /**
-     * 视频预览前设置
-     * @param sv SurfaceView?
-     * @return Boolean
-     */
-    private fun prePlay(sv: SurfaceView?): Boolean {
-        val isOpened = IPlaySDK.PLAYOpenStream(_playPort, null, 0, STREAM_BUF_SIZE) != 0
-        if (!isOpened) {
-            Log.d(TAG, "OpenStream Failed")
-            return false
-        }
-        val isPlaying = IPlaySDK.PLAYPlay(_playPort, sv) != 0
-        if (!isPlaying) {
-            Log.d(TAG, "PLAYPlay Failed")
-            IPlaySDK.PLAYCloseStream(_playPort)
-            return false
-        }
-        if (_isOpenSound) {
-            val isSuccess = IPlaySDK.PLAYPlaySoundShare(_playPort) != 0
-            if (!isSuccess) {
-                Log.d(TAG, "SoundShare Failed")
-                IPlaySDK.PLAYStop(_playPort)
-                IPlaySDK.PLAYCloseStream(_playPort)
-                return false
-            }
-            if (-1 == _curVolume) {
-                _curVolume = IPlaySDK.PLAYGetVolume(_playPort)
-            } else {
-                IPlaySDK.PLAYSetVolume(_playPort, _curVolume)
-            }
-        }
-        if (_isDelayPlay) {
-            if (IPlaySDK.PLAYSetDelayTime(_playPort, 500 /*ms*/, 1000 /*ms*/) == 0) {
-                Log.d(TAG, "SetDelayTime Failed")
-            }
-        }
-        return true
     }
 }

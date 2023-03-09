@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">CameraKit_Dahua</string>
 
+    <string name="activity_function_list_live_preview"> 单通道预览 </string>
+    <string name="activity_iplogin_device_ip">IP</string>
+    <string name="activity_iplogin_device_port">端口</string>
+    <string name="activity_iplogin_username">用户名</string>
+    <string name="activity_iplogin_password">密码</string>
+    <string name="common_login">登录</string>
+    <string name="common_logout">登出</string>
+    <string name="common_remember_info">保存登录信息</string>
+
     <string name="NET_ERROR">未知错误</string>
     <string name="NET_USER_FLASEPWD_TRYTIME">输入密码错误超过限制次数</string>
     <string name="NET_LOGIN_ERROR_PASSWORD">密码不正确</string>
