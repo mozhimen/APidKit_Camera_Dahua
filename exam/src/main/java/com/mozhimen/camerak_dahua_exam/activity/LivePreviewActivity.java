@@ -31,9 +31,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.company.netsdk.helpers.PTZControl;
 import com.mozhimen.camerak_dahua_exam.R;
 import com.mozhimen.camerak_dahua_exam.common.DialogProgress;
-import com.mozhimen.camerak_dahua_exam.common.PTZControl;
 import com.mozhimen.camerak_dahua_exam.common.ToolKits;
 import com.mozhimen.camerak_dahua_exam.module.CapturePictureModule;
 import com.mozhimen.camerak_dahua_exam.module.EncodeModule;

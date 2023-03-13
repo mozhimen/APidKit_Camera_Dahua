@@ -1,4 +1,4 @@
-package com.mozhimen.camerak_dahua_exam.common;
+package com.company.netsdk.helpers;
 
 import android.view.MotionEvent;
 

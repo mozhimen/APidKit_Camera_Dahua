@@ -3,10 +3,8 @@ package com.company.netsdk;
 import android.util.Log;
 
 import com.company.NetSDK.*;
-import com.company.netsdk.commons.IDisconnectListener;
+import com.company.netsdk.commons.ICameraKDisconnectListener;
 import com.mozhimen.basick.utilk.java.io.file.UtilKFile;
-
-import java.io.File;
 
 /**
  * Created by 29779 on 2017/4/10.
@@ -37,7 +35,7 @@ public final class NetSDKLib {
 
     /// Init NetSDK library's resources.
     /// 初始化 NETSDK
-    public synchronized void init(IDisconnectListener listener) {
+    public synchronized void init(ICameraKDisconnectListener listener) {
         INetSDK.LoadLibrarys();
         if (mbInit) {
             Log.d(TAG, "Already init.");
