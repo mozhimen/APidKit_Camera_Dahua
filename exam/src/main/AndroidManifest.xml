@@ -38,153 +38,160 @@
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.MainActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.IPLoginActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.P2PLoginActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.WIFIConfigurationActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.DeviceSearchActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.InitDevAccountActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.FunctionListActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.LivePreviewActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.LivePreviewDoubleChannelActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.PlaybackActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.DownLoadRecordFileActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.MarkRecordActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.TalkActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.VideoTalkActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.AlarmListenActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.AlarmPushActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.AlarmControlActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.DeviceControlActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.FileBrowserActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.CapturePictureActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name=".zxing.activity.CaptureActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectConfigActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectTimeSetActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectTimeShowActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectAreaActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.APConfig.ApIPLoginActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.APConfig.ApSearchWLANListActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
             android:name="com.mozhimen.camerak_dahua_exam.activity.APConfig.ApConfigActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <activity
             android:name=".activity.TestInterfaceActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
 
         <!-- [START fcm_service] -->
         <service

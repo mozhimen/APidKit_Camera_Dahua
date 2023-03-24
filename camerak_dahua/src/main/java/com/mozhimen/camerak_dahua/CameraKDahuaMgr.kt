@@ -5,6 +5,7 @@ import com.company.netsdk.commons.ICameraKDisconnectListener
 import com.mozhimen.basick.utilk.content.UtilKApplication
 import com.mozhimen.basick.utilk.device.UtilKDate
 import com.mozhimen.basick.utilk.java.io.file.UtilKFile
+import com.mozhimen.camerak_dahua.helpers.CapturePictureHelper
 import com.mozhimen.camerak_dahua.helpers.IPLoginHelper
 import com.mozhimen.camerak_dahua.helpers.LivePreviewHelper
 
@@ -29,6 +30,7 @@ class CameraKDahuaMgr {
     private val _context by lazy { UtilKApplication.instance.get() }
     private val _ipLoginHelper by lazy { IPLoginHelper() }
     private val _livePreviewHelper by lazy { LivePreviewHelper() }
+    private val _capturePictureHelper by lazy { CapturePictureHelper() }
     private val _cameraLogPath by lazy { _context.cacheDir.absolutePath + "/camerak_dahua/${UtilKDate.getNowLong()}.log" }
 
     fun init(listener: ICameraKDisconnectListener) {
@@ -47,5 +49,9 @@ class CameraKDahuaMgr {
 
     fun getLivePreview(): LivePreviewHelper {
         return _livePreviewHelper
+    }
+
+    fun getCapturePicture(): CapturePictureHelper {
+        return _capturePictureHelper
     }
 }

@@ -215,7 +215,7 @@ public class PTZControl {
         boolean bPtzControl = INetSDK.SDKPTZControl(loginHandle, nChn, SDK_PTZ_ControlType.SDK_PTZ_ZOOM_ADD_CONTROL, (byte) 0, param1, (byte) 0, false);
         if(bPtzControl) {
             try {
-                Thread.sleep(200);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -16,15 +16,28 @@ import com.mozhimen.camerak_dahua.bases.BaseHelper
  * @Version 1.0
  */
 class CapturePictureHelper : BaseHelper() {
+    /**
+     * 摄像机抓图
+     * @param m_hLoginHandle Long
+     * @param jpgFilePathWithName String
+     * @return Boolean
+     */
+    fun capturePicture(m_hLoginHandle: Long, jpgFilePathWithName: String): Boolean {
+        if (!INetSDK.CapturePicture(m_hLoginHandle, jpgFilePathWithName)) {
+            Log.w(TAG, "capturePicture: Failed!")
+            return false
+        }
+        return true
+    }
 
     /**
      * 本地抓图
      * @param nPort Int
-     * @param picFileName String
+     * @param jpgFilePathWithName String
      * @return Boolean
      */
-    fun localCapturePicture(nPort: Int, picFileName: String): Boolean {
-        if (IPlaySDK.PLAYCatchPicEx(nPort, picFileName, Constants.PicFormat_JPEG) == 0) {
+    fun capturePictureWhenPlay(nPort: Int, jpgFilePathWithName: String): Boolean {
+        if (IPlaySDK.PLAYCatchPicEx(nPort, jpgFilePathWithName, Constants.PicFormat_JPEG) == 0) {
             Log.d(TAG, "localCapturePicture: Failed!")
             return false
         }

@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.company.netsdk.NetSDKLib;
-import com.company.netsdk.commons.IDisconnectListener;
+import com.company.netsdk.commons.ICameraKDisconnectListener;
 import com.mozhimen.camerak_dahua_exam.R;
 import com.mozhimen.camerak_dahua_exam.common.ToolKits;
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         /// Initializing the NetSDKLib is important and necessary to ensure that
         /// all the APIs of INetSDK.jar are effective.
         /// 注意: 必须调用 init 接口初始化 INetSDK.jar 仅需要一次初始化
-        NetSDKLib.getInstance().init(new IDisconnectListener() {
+        NetSDKLib.getInstance().init(new ICameraKDisconnectListener() {
             @Override
             public void invoke(long l, String s, int i) {
                 Log.d("TAG", "invoke: ");
