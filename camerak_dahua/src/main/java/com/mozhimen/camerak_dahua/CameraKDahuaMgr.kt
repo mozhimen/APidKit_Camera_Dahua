@@ -3,7 +3,7 @@ package com.mozhimen.camerak_dahua
 import com.company.netsdk.NetSDKLib
 import com.company.netsdk.commons.ICameraKDisconnectListener
 import com.mozhimen.basick.utilk.content.UtilKApplication
-import com.mozhimen.basick.utilk.device.UtilKDate
+import com.mozhimen.basick.utilk.os.UtilKDate
 import com.mozhimen.basick.utilk.java.io.file.UtilKFile
 import com.mozhimen.camerak_dahua.helpers.CapturePictureHelper
 import com.mozhimen.camerak_dahua.helpers.IPLoginHelper
