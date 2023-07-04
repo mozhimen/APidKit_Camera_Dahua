@@ -7,10 +7,10 @@ import com.company.NetSDK.CB_fRealDataCallBackEx
 import com.company.NetSDK.INetSDK
 import com.company.NetSDK.SDK_RealPlayType
 import com.company.PlaySDK.IPlaySDK
-import com.mozhimen.basick.utilk.content.UtilKApplication
-import com.mozhimen.basick.utilk.os.UtilKDate
-import com.mozhimen.basick.utilk.res.UtilKRes
-import com.mozhimen.basick.utilk.view.bar.showToastOnMain
+import com.mozhimen.basick.utilk.android.app.UtilKApplication
+import com.mozhimen.basick.utilk.java.util.UtilKDate
+import com.mozhimen.basick.utilk.android.content.UtilKRes
+import com.mozhimen.basick.utilk.android.widget.showToastOnMain
 import com.mozhimen.camerak_dahua.R
 import com.mozhimen.camerak_dahua.bases.BaseHelper
 
