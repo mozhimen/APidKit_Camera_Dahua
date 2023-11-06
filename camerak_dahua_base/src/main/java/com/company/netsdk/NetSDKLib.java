@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.company.NetSDK.*;
 import com.company.netsdk.commons.ICameraKDisconnectListener;
-import com.mozhimen.basick.utilk.java.io.file.UtilKFile;
+import com.mozhimen.basick.utilk.java.io.UtilKFile;
 
 /**
  * Created by 29779 on 2017/4/10.
