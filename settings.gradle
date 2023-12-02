@@ -16,7 +16,7 @@ rootProject.name = "CameraKit_Dahua"
 include ':app'
 include ':camerak_dahua'
 include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("C:\\Users\\mozhimen\\Documents\\GitHub\\SwiftKit")
+project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
 include ':SwiftKit:componentk'
 include ':SwiftKit:uicorek'

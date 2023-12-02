@@ -9,7 +9,7 @@
     <string name="common_login">Login</string>
     <string name="common_logout">Logout</string>
     <string name ="common_remember_info"> Remember me</string>
-
+    <string name="activity_main_ip"> IP Login</string>
     <string name="NET_ERROR">Unknown error</string>
     <string name="NET_USER_FLASEPWD_TRYTIME">The password you typed is incorrect. </string>
     <string name="NET_LOGIN_ERROR_PASSWORD">Password is not correct</string>

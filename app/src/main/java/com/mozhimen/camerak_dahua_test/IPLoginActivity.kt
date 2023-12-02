@@ -2,10 +2,10 @@ package com.mozhimen.camerak_dahua_test
 
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
-import com.mozhimen.basick.cachek.CacheKSP
-import com.mozhimen.basick.elemk.activity.bases.BaseActivityVB
-import com.mozhimen.basick.utilk.exts.showToast
-import com.mozhimen.basick.utilk.exts.start
+import com.mozhimen.basick.cachek.sharedpreferences.CacheKSP
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseActivityVB
+import com.mozhimen.basick.utilk.android.content.startContext
+import com.mozhimen.basick.utilk.android.widget.showToast
 import com.mozhimen.camerak_dahua.CameraKDahuaMgr
 import com.mozhimen.camerak_dahua_test.databinding.ActivityIpLoginBinding
 import kotlinx.coroutines.Dispatchers
@@ -33,7 +33,7 @@ class IPLoginActivity : BaseActivityVB<ActivityIpLoginBinding>() {
                 )
             }
         }
-        vb.eyeButtonIp.setEditText(vb.etPwd)
+        vb.eyeButtonIp.bindEditText(vb.etPwd)
     }
 
     override fun onResume() {
@@ -59,7 +59,7 @@ class IPLoginActivity : BaseActivityVB<ActivityIpLoginBinding>() {
         if (result) {
             saveInfo(vb.cbIsSave.isChecked, address, port, admin, pwd)
             delay(200)
-            start<FunctionListActivity>()
+            startContext<FunctionListActivity>()
         } else {
             CameraKDahuaMgr.instance.getIPLogin().getErrorMsg().showToast()
         }

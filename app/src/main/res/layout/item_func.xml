@@ -30,6 +30,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/blue_normal" />
+            android:background="@color/cok_blue_0b82e0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

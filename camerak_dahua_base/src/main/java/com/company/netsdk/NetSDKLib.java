@@ -5,6 +5,7 @@ import android.util.Log;
 import com.company.NetSDK.*;
 import com.company.netsdk.commons.ICameraKDisconnectListener;
 import com.mozhimen.basick.utilk.java.io.UtilKFile;
+import com.mozhimen.basick.utilk.kotlin.UtilKStrFile;
 
 /**
  * Created by 29779 on 2017/4/10.
@@ -100,7 +101,7 @@ public final class NetSDKLib {
     /// 打开 SDK 日志
     public boolean openLog(String logFile) {
         Log.d(TAG, "log file -> " + logFile);
-        if (!UtilKFile.isFileExist(logFile)) {
+        if (!UtilKStrFile.isFileExist(logFile)) {
             return false;
         }
 

@@ -30,8 +30,6 @@ class LivePreviewHelper : BaseHelper() {
         private const val RAW_AUDIO_VIDEO_MIX_DATA = 0 //原始音视频混合数据;  //Raw audio and video mixing data.
     }
 
-    private val _context: Context = UtilKApplication.instance.get()
-
     private var _realHandle: Long = 0
     private var _playPort: Int = 0
     private var _curVolume = -1

@@ -2,11 +2,10 @@ package com.mozhimen.camerak_dahua_test
 
 import android.Manifest
 import android.os.Bundle
-import com.company.netsdk.commons.IDisconnectListener
-import com.mozhimen.basick.elemk.activity.bases.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseActivityVB
 import com.mozhimen.basick.manifestk.permission.ManifestKPermission
 import com.mozhimen.basick.manifestk.permission.annors.APermissionCheck
-import com.mozhimen.basick.utilk.exts.start
+import com.mozhimen.basick.utilk.android.content.startContext
 import com.mozhimen.camerak_dahua.CameraKDahuaMgr
 import com.mozhimen.camerak_dahua_test.databinding.ActivityMainBinding
 
@@ -19,7 +18,7 @@ import com.mozhimen.camerak_dahua_test.databinding.ActivityMainBinding
 class MainActivity : BaseActivityVB<ActivityMainBinding>() {
 
     override fun initData(savedInstanceState: Bundle?) {
-        ManifestKPermission.initPermissions(this) {
+        ManifestKPermission.requestPermissions(this) {
             super.initData(savedInstanceState)
         }
     }
@@ -28,7 +27,7 @@ class MainActivity : BaseActivityVB<ActivityMainBinding>() {
         CameraKDahuaMgr.instance.init { _, _, _ -> }
 
         vb.btnIPLogin.setOnClickListener {
-            start<IPLoginActivity>()
+            startContext<IPLoginActivity>()
         }
     }
 

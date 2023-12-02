@@ -2,7 +2,7 @@ package com.mozhimen.camerak_dahua_test
 
 import android.os.Bundle
 import android.view.SurfaceHolder
-import com.mozhimen.basick.elemk.activity.bases.BaseActivityVB
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseActivityVB
 import com.mozhimen.camerak_dahua.CameraKDahuaMgr
 import com.mozhimen.camerak_dahua_test.databinding.ActivityPreviewBinding
 

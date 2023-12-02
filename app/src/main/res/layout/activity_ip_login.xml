@@ -56,7 +56,7 @@
                     android:inputType="textPassword"
                     android:textSize="13sp" />
 
-                <com.mozhimen.uicorek.btnk.BtnKPwdEye
+                <com.mozhimen.uicorek.btnk.BtnKPwdVisible
                     android:id="@+id/eye_button_ip"
                     android:layout_width="35dp"
                     android:layout_height="match_parent"

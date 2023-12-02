@@ -1,5 +1,7 @@
 package com.mozhimen.camerak_dahua.bases
 
+import com.mozhimen.basick.utilk.bases.BaseUtilK
+
 
 /**
  * @ClassName BaseHelper
@@ -8,6 +10,4 @@ package com.mozhimen.camerak_dahua.bases
  * @Date 2023/3/9 11:21
  * @Version 1.0
  */
-abstract class BaseHelper {
-    protected val TAG = "${this.javaClass.simpleName}>>>>>"
-}
+abstract class BaseHelper : BaseUtilK()
