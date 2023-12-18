@@ -52,9 +52,10 @@ class LivePreviewHelper : BaseHelper() {
      * @return Boolean
      */
     fun prePlay(sv: SurfaceView?): Boolean {
-        val isOpened = IPlaySDK.PLAYOpenStream(_playPort, null, 0, STREAM_BUF_SIZE) != 0
+        val code = IPlaySDK.PLAYOpenStream(_playPort, null, 0, STREAM_BUF_SIZE)
+        val isOpened = code != 0
         if (!isOpened) {
-            Log.d(TAG, "OpenStream Failed")
+            Log.d(TAG, "OpenStream Failed code $code")
             return false
         }
         val isPlaying = IPlaySDK.PLAYPlay(_playPort, sv) != 0
