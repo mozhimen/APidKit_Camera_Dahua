@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.mozhimen.camerak_dahua_test">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -15,16 +14,16 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="s">
         <activity
-            android:name="com.mozhimen.camerak_dahua_test.PreviewActivity"
+            android:name="com.mozhimen.camerak_dahua_test.com.mozhimen.pidk.camera.dahua.test.PreviewActivity"
             android:launchMode="singleTop" />
         <activity
-            android:name="com.mozhimen.camerak_dahua_test.FunctionListActivity"
+            android:name="com.mozhimen.camerak_dahua_test.com.mozhimen.pidk.camera.dahua.test.FunctionListActivity"
             android:launchMode="singleTop" />
         <activity
-            android:name="com.mozhimen.camerak_dahua_test.IPLoginActivity"
+            android:name="com.mozhimen.camerak_dahua_test.com.mozhimen.pidk.camera.dahua.test.IPLoginActivity"
             android:launchMode="singleTop" />
         <activity
-            android:name="com.mozhimen.camerak_dahua_test.MainActivity"
+            android:name="com.mozhimen.camerak_dahua_test.com.mozhimen.pidk.camera.dahua.test.MainActivity"
             android:exported="true"
             android:launchMode="singleTop">
             <intent-filter>

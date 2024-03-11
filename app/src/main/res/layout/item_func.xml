@@ -7,7 +7,7 @@
 
         <variable
             name="item_func"
-            type="com.mozhimen.camerak_dahua_test.FunctionListActivity.FuncBean" />
+            type="com.mozhimen.pidk.camera.dahua.test.FunctionListActivity.FuncBean" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

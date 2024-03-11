@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2">
 
-                <com.mozhimen.camerak_dahua_exam.common.ClearEditText
+                <com.mozhimen.pidk.camera.dahua.exam.common.ClearEditText
                     android:id="@+id/sn_et"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
@@ -117,7 +117,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2">
 
-                <com.mozhimen.camerak_dahua_exam.common.ClearEditText
+                <com.mozhimen.pidk.camera.dahua.exam.common.ClearEditText
                     android:id="@+id/init_passwd_edit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -129,7 +129,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.mozhimen.camerak_dahua_exam.common.EyeImageButton
+            <com.mozhimen.pidk.camera.dahua.exam.common.EyeImageButton
                 android:id="@+id/eye_button_passwd"
                 android:layout_width="35dp"
                 android:layout_height="45dp"
@@ -153,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.mozhimen.camerak_dahua_exam.common.ClearEditText
+                <com.mozhimen.pidk.camera.dahua.exam.common.ClearEditText
                     android:id="@+id/init_phone_et"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
@@ -178,7 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <com.mozhimen.camerak_dahua_exam.common.ClearEditText
+                <com.mozhimen.pidk.camera.dahua.exam.common.ClearEditText
                     android:id="@+id/init_mail_et"
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"

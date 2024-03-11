@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.camerak_dahua_exam'
+    namespace 'com.mozhimen.pidk.camera.dahua.exam'
     compileSdk rootProject.android.compileSdk
 
     defaultConfig {
         applicationId "com.mozhimen.camerak_dahua_exam"
-        minSdk rootProject.android.minSdk
+        minSdk 21
         targetSdk rootProject.android.targetSdk
         versionCode rootProject.android.versionCode
         versionName rootProject.android.versionName
@@ -46,7 +46,7 @@ dependencies {
 
     //lib
     implementation project(':SwiftKit:basick')
-    implementation project(':camerak_dahua_base')
+    implementation project(':pidk_camera_dahua_basic')
 
     //test
     testImplementation 'junit:junit:4.13.2'

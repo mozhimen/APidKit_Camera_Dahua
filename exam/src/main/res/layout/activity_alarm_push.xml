@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.mozhimen.camerak_dahua_exam.common.ClearEditText
+            <com.mozhimen.pidk.camera.dahua.exam.common.ClearEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_alarm_push_device_name"

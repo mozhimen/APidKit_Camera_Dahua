@@ -1,8 +1,8 @@
 ext {
     android = [
-            compileSdk   : 33,
+            compileSdk   : 34,
             applicationId: "com.mozhimen.camerak_dahua_test",
-            minSdk       : 21,
+            minSdk       : 19,
             targetSdk    : 33,
             versionCode  : 1,
             versionName  : "1.0"

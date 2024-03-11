@@ -36,7 +36,7 @@
             android:value="2.1" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.MainActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:exported="true">
@@ -48,98 +48,98 @@
         </activity>
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.IPLoginActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.IPLoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.P2PLoginActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.P2PLoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.WIFIConfigurationActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.WIFIConfigurationActivity"
             android:screenOrientation="landscape"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.DeviceSearchActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.DeviceSearchActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.InitDevAccountActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.InitDevAccountActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.FunctionListActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.FunctionListActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.LivePreviewActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.LivePreviewActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.LivePreviewDoubleChannelActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.LivePreviewDoubleChannelActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.PlaybackActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.PlaybackActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.DownLoadRecordFileActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.DownLoadRecordFileActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.MarkRecordActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.MarkRecordActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.TalkActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.TalkActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.VideoTalkActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.VideoTalkActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.AlarmListenActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.AlarmListenActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.AlarmPushActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.AlarmPushActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.AlarmControlActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.AlarmControlActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.DeviceControlActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.DeviceControlActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.FileBrowserActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.FileBrowserActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.CapturePictureActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.CapturePictureActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
@@ -149,42 +149,42 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectConfigActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.MotionDetectConfig.MotionDetectConfigActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectTimeSetActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.MotionDetectConfig.MotionDetectTimeSetActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectTimeShowActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.MotionDetectConfig.MotionDetectTimeShowActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.MotionDetectConfig.MotionDetectAreaActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.MotionDetectConfig.MotionDetectAreaActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.APConfig.ApIPLoginActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.APConfig.ApIPLoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.APConfig.ApSearchWLANListActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.APConfig.ApSearchWLANListActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
             android:theme="@style/NoActionBar" />
 
         <activity
-            android:name="com.mozhimen.camerak_dahua_exam.activity.APConfig.ApConfigActivity"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.activity.APConfig.ApConfigActivity"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
 
@@ -195,7 +195,7 @@
 
         <!-- [START fcm_service] -->
         <service
-            android:name="com.mozhimen.camerak_dahua_exam.common.EMFCMMSGService"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.common.EMFCMMSGService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -203,7 +203,7 @@
         </service>
 
         <service
-            android:name="com.mozhimen.camerak_dahua_exam.common.EMFCMTokenRefreshService"
+            android:name="com.mozhimen.pidk.camera.dahua.exam.common.EMFCMTokenRefreshService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />

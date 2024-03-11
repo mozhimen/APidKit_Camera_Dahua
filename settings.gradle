@@ -12,14 +12,20 @@ dependencyResolutionManagement {
         google()
     }
 }
-rootProject.name = "CameraKit_Dahua"
+rootProject.name = "APidKit_Camera_Dahua"
 include ':app'
-include ':camerak_dahua'
-include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
-include ':SwiftKit:basick'
-include ':SwiftKit:componentk'
-include ':SwiftKit:uicorek'
-include ':SwiftKit:underlayk'
-include ':camerak_dahua_base'
 include ':exam'
+include ':pidk_camera_dahua'
+include ':pidk_camera_dahua_basic'
+//SwiftKit
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
+include ':SwiftKit:xmlk'
+//AXmlKit
+include ':AXmlKit'
+project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
+include ':AXmlKit:recyclerk'
+include ':AXmlKit:vhk'
+include ':AXmlKit:btnk_pwd'
+
