@@ -2,8 +2,9 @@ package com.mozhimen.pidk.camera.dahua
 
 import com.company.netsdk.NetSDKLib
 import com.company.netsdk.commons.ICameraKDisconnectListener
-import com.mozhimen.basick.utilk.android.app.UtilKApplicationReflect
+import com.mozhimen.basick.utilk.android.app.UtilKApplicationWrapper
 import com.mozhimen.basick.utilk.java.util.UtilKDate
+import com.mozhimen.basick.utilk.java.util.UtilKDateWrapper
 import com.mozhimen.basick.utilk.kotlin.UtilKStrFile
 import com.mozhimen.pidk.camera.dahua.helpers.CapturePictureHelper
 import com.mozhimen.pidk.camera.dahua.helpers.IPLoginHelper
@@ -27,11 +28,11 @@ class CameraKDahuaMgr {
         val holder = CameraKDahuaMgr()
     }
 
-    private val _context by lazy { UtilKApplicationReflect.instance.get() }
+    private val _context by lazy { UtilKApplicationWrapper.instance.get() }
     private val _ipLoginHelper by lazy { IPLoginHelper() }
     private val _livePreviewHelper by lazy { LivePreviewHelper() }
     private val _capturePictureHelper by lazy { CapturePictureHelper() }
-    private val _cameraLogPath by lazy { _context.cacheDir.absolutePath + "/camerak_dahua/${UtilKDate.getNowLong()}.log" }
+    private val _cameraLogPath by lazy { _context.cacheDir.absolutePath + "/camerak_dahua/${UtilKDateWrapper.getNowLong()}.log" }
 
     fun init(listener: ICameraKDisconnectListener) {
         NetSDKLib.getInstance().init(listener)

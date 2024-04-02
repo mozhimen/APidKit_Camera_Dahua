@@ -2,7 +2,7 @@ package com.mozhimen.pidk.camera.dahua.helpers
 
 import android.util.Log
 import com.company.NetSDK.*
-import com.mozhimen.basick.utilk.android.content.UtilKRes
+import com.mozhimen.basick.utilk.wrapper.UtilKRes
 import com.mozhimen.pidk.camera.dahua.R
 import com.mozhimen.pidk.camera.dahua.bases.BaseHelper
 import com.mozhimen.pidk.camera.dahua.cons.CIPLoginErrorCode

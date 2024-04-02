@@ -7,8 +7,9 @@ import com.company.NetSDK.INetSDK
 import com.company.NetSDK.SDK_RealPlayType
 import com.company.PlaySDK.IPlaySDK
 import com.mozhimen.basick.utilk.java.util.UtilKDate
-import com.mozhimen.basick.utilk.android.content.UtilKRes
 import com.mozhimen.basick.utilk.android.widget.showToastOnMain
+import com.mozhimen.basick.utilk.java.util.UtilKDateWrapper
+import com.mozhimen.basick.utilk.wrapper.UtilKRes
 import com.mozhimen.pidk.camera.dahua.R
 import com.mozhimen.pidk.camera.dahua.bases.BaseHelper
 
@@ -209,6 +210,6 @@ class LivePreviewHelper : BaseHelper() {
      */
     @Synchronized
     private fun getInnerAppFileName(suffix: String): String {
-        return "${_context.getExternalFilesDir(null)!!.absolutePath}/camerak_dahua_live_${UtilKDate.getNowLong()}.${suffix}"
+        return "${_context.getExternalFilesDir(null)!!.absolutePath}/camerak_dahua_live_${UtilKDateWrapper.getNowLong()}.${suffix}"
     }
 }
