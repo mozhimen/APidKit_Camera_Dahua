@@ -6,7 +6,7 @@ import com.company.NetSDK.CB_fRealDataCallBackEx
 import com.company.NetSDK.INetSDK
 import com.company.NetSDK.SDK_RealPlayType
 import com.company.PlaySDK.IPlaySDK
-import com.mozhimen.basick.utilk.java.util.UtilKDate
+import com.company.PlaySDK.IPlaySDKCallBack.fDrawCBFun
 import com.mozhimen.basick.utilk.android.widget.showToastOnMain
 import com.mozhimen.basick.utilk.java.util.UtilKDateWrapper
 import com.mozhimen.basick.utilk.wrapper.UtilKRes
@@ -50,7 +50,7 @@ class LivePreviewHelper : BaseHelper() {
      * @param sv SurfaceView?
      * @return Boolean
      */
-    fun prePlay(sv: SurfaceView?): Boolean {
+    fun prePlay(sv: SurfaceView?, fDrawCBFun: fDrawCBFun?): Boolean {
         val code = IPlaySDK.PLAYOpenStream(_playPort, null, 0, STREAM_BUF_SIZE)
         val isOpened = code != 0
         if (!isOpened) {
@@ -62,6 +62,9 @@ class LivePreviewHelper : BaseHelper() {
             Log.d(TAG, "PLAYPlay Failed")
             IPlaySDK.PLAYCloseStream(_playPort)
             return false
+        }
+        fDrawCBFun?.let {
+            IPlaySDK.PLAYRigisterDrawFun(_playPort, 0, it, 0)
         }
         if (_isOpenSound) {
             val isSuccess = IPlaySDK.PLAYPlaySoundShare(_playPort) != 0
@@ -105,14 +108,14 @@ class LivePreviewHelper : BaseHelper() {
         _realHandle == 0L
 
     //开始预览视频
-    fun startPlay(loginHandle: Long, channel: Int, streamType: Int, surfaceView: SurfaceView) {
+    fun startPlay(loginHandle: Long, channel: Int, streamType: Int, surfaceView: SurfaceView, fDrawCBFun: fDrawCBFun?) {
         Log.d(TAG, "startPlay StreamType: " + _streamTypeMap[streamType])
         _realHandle = INetSDK.RealPlayEx(loginHandle, channel, _streamTypeMap[streamType]!!)
         if (_realHandle == 0L) {
             Log.e(TAG, "startPlay: RealPlayEx failed!")
             return
         }
-        if (!prePlay(surfaceView)) {
+        if (!prePlay(surfaceView, fDrawCBFun)) {
             Log.d(TAG, "prePlay returned false..")
             INetSDK.StopRealPlayEx(_realHandle)
             return
