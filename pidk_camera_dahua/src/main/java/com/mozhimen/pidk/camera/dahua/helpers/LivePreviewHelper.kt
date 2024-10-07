@@ -7,9 +7,9 @@ import com.company.NetSDK.INetSDK
 import com.company.NetSDK.SDK_RealPlayType
 import com.company.PlaySDK.IPlaySDK
 import com.company.PlaySDK.IPlaySDKCallBack.fDrawCBFun
-import com.mozhimen.basick.utilk.android.widget.showToastOnMain
-import com.mozhimen.basick.utilk.java.util.UtilKDateWrapper
-import com.mozhimen.basick.utilk.wrapper.UtilKRes
+import com.mozhimen.kotlin.utilk.android.widget.showToastOnMain
+import com.mozhimen.kotlin.utilk.java.util.UtilKDateWrapper
+import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
 import com.mozhimen.pidk.camera.dahua.R
 import com.mozhimen.pidk.camera.dahua.bases.BaseHelper
 

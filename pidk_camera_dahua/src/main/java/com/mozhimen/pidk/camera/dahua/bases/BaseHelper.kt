@@ -1,6 +1,6 @@
 package com.mozhimen.pidk.camera.dahua.bases
 
-import com.mozhimen.basick.utilk.bases.BaseUtilK
+import com.mozhimen.kotlin.utilk.bases.BaseUtilK
 
 
 /**

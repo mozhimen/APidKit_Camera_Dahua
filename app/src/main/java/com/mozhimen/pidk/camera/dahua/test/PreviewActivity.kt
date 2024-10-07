@@ -2,7 +2,7 @@ package com.mozhimen.pidk.camera.dahua.test
 
 import android.os.Bundle
 import android.view.SurfaceHolder
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.kotlin.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
 import com.mozhimen.pidk.camera.dahua.CameraKDahuaMgr
 import com.mozhimen.pidk.camera.dahua.test.databinding.ActivityPreviewBinding
 

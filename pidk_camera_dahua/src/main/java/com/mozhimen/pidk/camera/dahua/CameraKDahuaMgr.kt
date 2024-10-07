@@ -2,10 +2,10 @@ package com.mozhimen.pidk.camera.dahua
 
 import com.company.netsdk.NetSDKLib
 import com.company.netsdk.commons.ICameraKDisconnectListener
-import com.mozhimen.basick.utilk.android.app.UtilKApplicationWrapper
-import com.mozhimen.basick.utilk.java.util.UtilKDate
-import com.mozhimen.basick.utilk.java.util.UtilKDateWrapper
-import com.mozhimen.basick.utilk.kotlin.UtilKStrFile
+import com.mozhimen.kotlin.utilk.android.app.UtilKApplicationWrapper
+import com.mozhimen.kotlin.utilk.java.util.UtilKDate
+import com.mozhimen.kotlin.utilk.java.util.UtilKDateWrapper
+import com.mozhimen.kotlin.utilk.kotlin.UtilKStrFile
 import com.mozhimen.pidk.camera.dahua.helpers.CapturePictureHelper
 import com.mozhimen.pidk.camera.dahua.helpers.IPLoginHelper
 import com.mozhimen.pidk.camera.dahua.helpers.LivePreviewHelper

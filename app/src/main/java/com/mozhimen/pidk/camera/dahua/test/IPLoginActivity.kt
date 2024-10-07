@@ -3,9 +3,9 @@ package com.mozhimen.pidk.camera.dahua.test
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import com.mozhimen.cachek.sharedpreferences.CacheKSP
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
-import com.mozhimen.basick.utilk.android.content.startContext
-import com.mozhimen.basick.utilk.android.widget.showToast
+import com.mozhimen.kotlin.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.kotlin.utilk.android.content.startContext
+import com.mozhimen.kotlin.utilk.android.widget.showToast
 import com.mozhimen.pidk.camera.dahua.CameraKDahuaMgr
 import com.mozhimen.pidk.camera.dahua.test.databinding.ActivityIpLoginBinding
 import kotlinx.coroutines.Dispatchers

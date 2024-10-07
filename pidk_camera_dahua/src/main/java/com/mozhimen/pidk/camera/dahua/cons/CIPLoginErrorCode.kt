@@ -1,7 +1,7 @@
 package com.mozhimen.pidk.camera.dahua.cons
 
 import com.company.NetSDK.FinalVar
-import com.mozhimen.basick.utilk.wrapper.UtilKRes
+import com.mozhimen.kotlin.utilk.wrapper.UtilKRes
 import com.mozhimen.pidk.camera.dahua.R
 
 /**

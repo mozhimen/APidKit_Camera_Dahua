@@ -2,9 +2,9 @@ package com.mozhimen.pidk.camera.dahua.test
 
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
-import com.mozhimen.basick.utilk.android.content.UtilKRes
-import com.mozhimen.basick.utilk.android.content.startContext
+import com.mozhimen.kotlin.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.kotlin.utilk.android.content.UtilKRes
+import com.mozhimen.kotlin.utilk.android.content.startContext
 import com.mozhimen.pidk.camera.dahua.test.databinding.ActivityFunctionListBinding
 import com.mozhimen.pidk.camera.dahua.test.databinding.ItemFuncBinding
 import com.mozhimen.xmlk.recyclerk.quick.AdapterKQuickRecyclerVB
