@@ -2,7 +2,7 @@ package com.mozhimen.pidk.camera.dahua.test
 
 import android.Manifest
 import android.os.Bundle
-import com.mozhimen.kotlin.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.basick.manifestk.permission.ManifestKPermission
 import com.mozhimen.basick.manifestk.permission.annors.APermissionCheck
 import com.mozhimen.kotlin.utilk.android.content.startContext
