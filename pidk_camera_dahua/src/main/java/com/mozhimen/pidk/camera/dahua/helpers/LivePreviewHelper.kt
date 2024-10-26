@@ -108,7 +108,8 @@ class LivePreviewHelper : BaseHelper() {
         _realHandle == 0L
 
     //开始预览视频
-    fun startPlay(loginHandle: Long, channel: Int, streamType: Int, surfaceView: SurfaceView, fDrawCBFun: fDrawCBFun?) {
+    fun startPlay(loginHandle: Long, channel: Int, streamType: Int, surfaceView: SurfaceView?, fDrawCBFun: fDrawCBFun?) {
+        if (surfaceView==null)return
         Log.d(TAG, "startPlay StreamType: " + _streamTypeMap[streamType])
         _realHandle = INetSDK.RealPlayEx(loginHandle, channel, _streamTypeMap[streamType]!!)
         if (_realHandle == 0L) {
